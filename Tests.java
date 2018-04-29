@@ -17,6 +17,14 @@ public class Tests
     private Ellipse ellipse1;
     private Triangle triangle1;
 
+    
+    
+    
+
+    
+    
+    
+
     /**
      * Default constructor for test class Tests
      */
@@ -32,9 +40,10 @@ public class Tests
     @Before
     public void setUp()
     {
-        rectangl1 = new Rectangle();
-        ellipse1 = new Ellipse();
-        triangle1 = new Triangle();
+        rectangl1 = new Rectangle(50, 50, 200, 100);
+        ellipse1 = new Ellipse(50, 50, 200, 100);
+        triangle1 = new Triangle(50, 50, 200, 100);
+        IO.inform("Fixture prepared");
     }
 
     /**
