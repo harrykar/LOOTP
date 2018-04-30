@@ -76,6 +76,21 @@ public class Tests
         rectangl1.paint();
         triangle1.moveDown();
     }
+
+    @Test
+    public void testcolor()
+    {
+        NamedColor RectColor = rectangl1.getColor();
+        triangle1.setColor(RectColor);
+        NamedColor.showDefinedNames();
+        NamedColor red = NamedColor.getNamedColor("red");
+        IO.inform("Change the triangle's color");
+        triangle1.setColor(red);
+        IO.inform("now we change the ellipse's color  to red  too");
+        IO.inform("Forget it. Now we change the triangle color to ellipse's color(blue)");
+        triangle1.setColor(ellipse1.getColor ());
+    }
 }
+
 
 
