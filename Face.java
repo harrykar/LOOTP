@@ -59,5 +59,16 @@ public class Face
         mouth.setSize(150, 100);
         Rectangle lip = new Rectangle(75, 150, 150, 50);
     }
+
+    @Test
+    public void testBlink()
+    {
+        NamedColor headColor = head.getColor();
+        NamedColor rightEyeColor = rightEye.getColor();
+        leftEye.setColor(headColor);
+        IO.pause(250);
+        leftEye.setColor(rightEyeColor);
+    }
 }
+
 

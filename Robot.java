@@ -59,5 +59,17 @@ public class Robot
         IO.pause(500);
         rightHand.moveRight(75);
     }
+
+    @Test
+    public void testColor()
+    {
+        NamedColor.showDefinedNames();
+        NamedColor steely = NamedColor.getNamedColor("steely");
+        rightHand.setColor(steely);
+        leftHand.setColor(steely);
+        NamedColor cyan = NamedColor.getNamedColor("cyan");
+        body.setColor(cyan);
+    }
 }
+
 

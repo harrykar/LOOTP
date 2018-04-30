@@ -55,5 +55,13 @@ public class House
         Ellipse s2 = new Ellipse(125, 25, 75, 50);
         Ellipse s3 = new Ellipse(150, 0, 100, 50);
     }
+
+    @Test
+    public void testColor()
+    {
+        roof.setColor(NamedColor.getNamedColor("red"));
+        building.setColor(NamedColor.getNamedColor("ochre"));
+    }
 }
+
 
